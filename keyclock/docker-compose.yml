@@ -1,0 +1,16 @@
+version: '3'
+services:
+  keycloak:
+    container_name: keycloak
+    image: 'quay.io/keycloak/keycloak:17.0.0'
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=password
+      - KC_HTTPS_CERTIFICATE_FILE=/opt/keycloak/conf/server.crt.pem
+      - KC_HTTPS_CERTIFICATE_KEY_FILE=/opt/keycloak/conf/server.key.pem
+    volumes:
+      - '$PWD/server.crt.pem:/opt/keycloak/conf/server.crt.pem'
+      - '$PWD/server.key.pem:/opt/keycloak/conf/server.key.pem'
+    ports:
+      - '2000:8443'
+    command: start-dev

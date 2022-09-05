@@ -1,0 +1,15 @@
+server:
+  port: 9091
+
+spring:
+  h2:
+    console:
+      enabled: true
+
+keycloak:
+  realm: gatewayrealm
+  auth-server-url: http://localhost:2000/auth
+  resource: sso-client
+  public-client: true
+  bearer-only: true
+  

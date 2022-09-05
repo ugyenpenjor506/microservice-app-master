@@ -1,0 +1,16 @@
+Flask
+Flask_Cors
+flask_marshmallow
+Flask_SQLAlchemy
+marshmallow
+numpy
+pandas
+python_dateutil
+SQLAlchemy
+Werkzeug
+gunicorn
+sqlalchemy_utils
+pymysql
+xlrd
+Openpyxl
+flask_oidc

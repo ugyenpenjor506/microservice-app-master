@@ -1,0 +1,12 @@
+{
+    "web":
+     {
+       "client_id": "sso-client",
+       "client_secret": "6V8f5mAEj6osDCD7yRlUvNtrKdIwHBqI",
+       "auth_uri": "https://13.214.161.35:2000/realms/dk-realm/protocol/openid-connect/auth",
+       "token_uri": "https://13.214.161.35:2000/realms/dk-realm/protocol/openid-connect/token",
+       "token_introspection_uri": "https://13.214.161.35:2000/realms/dk-realm/protocol/openid-connect/token/introspect",
+       "realm": "dk-realm",
+       "ssl-required": "none"
+    }
+}

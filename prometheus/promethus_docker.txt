@@ -1,0 +1,1 @@
+docker run -p 9090:9090 -v /home/ugyen/OfficeWork/Digital_Kidu/microservices/prometheus/prometheus.yml prom/prometheus
